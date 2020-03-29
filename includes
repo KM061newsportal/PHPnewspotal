@@ -1,0 +1,172 @@
+            <div class="topbar">
+
+                <!-- LOGO -->
+                <div class="topbar-left">
+                    <a href="index.html" class="logo"><span>NEWS<span>PORTAL</span></span><i class="mdi mdi-layers"></i></a>
+                    <!-- Image logo -->
+                    <!--<a href="index.html" class="logo">-->
+                        <!--<span>-->
+                            <!--<img src="assets/images/logo.png" alt="" height="30">-->
+                        <!--</span>-->
+                        <!--<i>-->
+                            <!--<img src="assets/images/logo_sm.png" alt="" height="28">-->
+                        <!--</i>-->
+                    <!--</a>-->
+                </div>
+
+                <!-- Button mobile view to collapse sidebar menu -->
+                <div class="navbar navbar-default" role="navigation">
+                    <div class="container">
+
+                        <!-- Navbar-left -->
+                        <ul class="nav navbar-nav navbar-left">
+                            <li>
+                                <button class="button-menu-mobile open-left waves-effect">
+                                    <i class="mdi mdi-menu"></i>
+                                </button>
+                            </li>
+                     
+                    
+                        </ul>
+
+                        <!-- Right(Notification) -->
+                        <ul class="nav navbar-nav navbar-right">
+                          
+
+                            <li class="dropdown user-box">
+                                <a href="" class="dropdown-toggle waves-effect user-link" data-toggle="dropdown" aria-expanded="true">
+                                    <img src="assets/images/users/avatar-1.jpg" alt="user-img" class="img-circle user-img">
+                                </a>
+
+                                <ul class="dropdown-menu dropdown-menu-right arrow-dropdown-menu arrow-menu-right user-list notify-list">
+                                    <li>
+                                        <h5>Hi, Admin</h5>
+                                    </li>
+                              
+                                    <li><a href="change-password.php"><i class="ti-settings m-r-5"></i> Chnage Password</a></li>
+                           
+                                    <li><a href="logout.php"><i class="ti-power-off m-r-5"></i> Logout</a></li>
+                                </ul>
+                            </li>
+
+                        </ul> <!-- end navbar-right -->
+
+                    </div><!-- end container -->
+                </div><!-- end navbar -->
+            </div>
+                        <div class="left side-menu">
+                <div class="sidebar-inner slimscrollleft">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <ul>
+                        	<li class="menu-title">Navigation</li>
+
+                            <li class="has_sub">
+                                <a href="dashboard.php" class="waves-effect"><i class="mdi mdi-view-dashboard"></i> <span> Dashboard </span> </a>
+                         
+                            </li>
+
+
+
+               
+
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Category </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                	<li><a href="add-category.php">Add Category</a></li>
+                                    <li><a href="manage-categories.php">Manage Category</a></li>
+                                </ul>
+                            </li>
+
+    <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span>Sub Category </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="add-subcategory.php">Add Sub Category</a></li>
+                                    <li><a href="manage-subcategories.php">Manage Sub Category</a></li>
+                                </ul>
+                            </li>               
+  <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Posts </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="add-post.php">Add Posts</a></li>
+                                    <li><a href="manage-posts.php">Manage Posts</a></li>
+                                     <li><a href="trash-posts.php">Trash Posts</a></li>
+                                </ul>
+                            </li>  
+                     
+
+                            <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Pages </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                    <li><a href="aboutus.php">About us</a></li>
+                                    <li><a href="contactus.php">Contact us</a></li>
+                                </ul>
+                            </li>
+   <li class="has_sub">
+                                <a href="javascript:void(0);" class="waves-effect"><i class="mdi mdi-format-list-bulleted"></i> <span> Comments </span> <span class="menu-arrow"></span></a>
+                                <ul class="list-unstyled">
+                                  <li><a href="unapprove-comment.php">Waiting for Approval </a></li>
+                                    <li><a href="manage-comments.php">Approved Comments</a></li>
+                                </ul>
+                            </li>   
+
+                        </ul>
+                    </div>
+                    <!-- Sidebar -->
+                    <div class="clearfix"></div>
+
+                    <div class="help-box">
+                        <h5 class="text-muted m-t-0">For Help ?</h5>
+                        <p class=""><span class="text-custom">Email:</span> <br/> phpgurukulofficial@gmail.com</p>
+                    </div>
+
+                </div>
+                <!-- Sidebar -left -->
+
+            </div>
+            <?php
+define('DB_SERVER','localhost');
+define('DB_USER','root');
+define('DB_PASS' ,'');
+define('DB_NAME','newsportal');
+$con = mysqli_connect(DB_SERVER,DB_USER,DB_PASS,DB_NAME);
+// Check connection
+if (mysqli_connect_errno())
+{
+ echo "Failed to connect to MySQL: " . mysqli_connect_error();
+}
+?>
+                <footer class="footer text-right">
+                   @bhargavi         <center>@kavya</center>        @saurabh
+                </footer>
+/*!
+ * Start Bootstrap - Modern Business (https://startbootstrap.com/template-overviews/modern-business)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-logomodern-business-nav/blob/master/LICENSE)
+ */
+
+body {
+  padding-top: 54px;
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
+
+.carousel-item {
+  height: 65vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
+}
